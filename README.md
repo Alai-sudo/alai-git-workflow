@@ -13,28 +13,18 @@ When installed, Claude Code will automatically:
 
 ## Installation
 
-### Option 1: Download .skill file
+### Step 1: Add Marketplace Source
 
-1. Download `alai-git-workflow.skill` from [Releases](https://github.com/Alai-sudo/alai-git-workflow/releases)
-2. Place it in `~/.claude/skills/`
+In Claude Code, run:
 
-### Option 2: Clone and install
-
-```bash
-git clone https://github.com/Alai-sudo/alai-git-workflow.git
-cp alai-git-workflow/SKILL.md ~/.claude/skills/alai-git-workflow/
+```
+/plugin marketplace add Alai-sudo/alai-git-workflow
 ```
 
-### Option 3: Add to Claude Code settings
+### Step 2: Install the Skill
 
-Add to your `~/.claude/settings.json`:
-
-```json
-{
-  "skills": [
-    "https://github.com/Alai-sudo/alai-git-workflow"
-  ]
-}
+```
+/plugin install alai-git-workflow@alai-skills
 ```
 
 ## Usage
@@ -44,6 +34,13 @@ Once installed, the skill activates automatically when you work on coding tasks.
 1. Switch to `dev/alai-sudo` branch before making changes
 2. Commit with descriptive messages following conventional format
 3. Push and create PRs when you're ready
+
+## Uninstall
+
+```
+/plugin uninstall alai-git-workflow@alai-skills
+/plugin marketplace remove alai-skills
+```
 
 ## License
 
