@@ -3,7 +3,7 @@
   "owner": {
     "name": "Alai-sudo"
   },
-  "skills": [
+  "plugins": [
     {
       "name": "alai-git-workflow",
       "source": "./skills/alai-git-workflow",
