@@ -21,7 +21,7 @@ In Claude Code, run:
 /plugin marketplace add Alai-sudo/alai-git-workflow
 ```
 
-### Step 2: Install the Skill
+### Step 2: Install the Plugin
 
 ```
 /plugin install alai-git-workflow@alai-skills
@@ -29,7 +29,13 @@ In Claude Code, run:
 
 ## Usage
 
-Once installed, the skill activates automatically when you work on coding tasks. Claude will:
+Once installed, you can invoke the skill by running:
+
+```
+/alai-git-workflow:alai-git-workflow
+```
+
+The skill activates automatically when you work on coding tasks. Claude will:
 
 1. Switch to `dev/alai-sudo` branch before making changes
 2. Commit with descriptive messages following conventional format

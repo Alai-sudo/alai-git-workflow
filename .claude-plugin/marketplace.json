@@ -6,8 +6,11 @@
   "plugins": [
     {
       "name": "alai-git-workflow",
-      "source": "./skills/alai-git-workflow",
-      "description": "Git collaboration workflow enforcing dev/alai-sudo branch and best practices"
+      "description": "Git collaboration workflow enforcing dev/alai-sudo branch and best practices",
+      "source": "./",
+      "skills": [
+        "./skills/alai-git-workflow"
+      ]
     }
   ]
 }
